@@ -26,9 +26,6 @@ int main() {
     // Product with Number
     int **prodn = prodNumberMatrix(tab1, 4, 2, 2);
 
-    // Product with Number
-    int **prod = prodMatrix(tab1, tab2, 2, 2);
-
     printf("Add:\n");
     printMatrix(add, 2, 2);
 
@@ -38,23 +35,18 @@ int main() {
     printf("Prod with Number:\n");
     printMatrix(prodn, 2, 2);
 
-    printf("Prod with Matrix:\n");
-    printMatrix(prod, 2, 2);
-
     for (int i = 0; i < 2; i++) {
         free(tab1[i]);
         free(tab2[i]);
         free(add[i]);
         free(sub[i]);
         free(prodn[i]);
-        free(prod[i]);
     }
     free(tab1);
     free(tab2);
     free(add);
     free(sub);
     free(prodn);
-    free(prod);
 
     return 0;
 }

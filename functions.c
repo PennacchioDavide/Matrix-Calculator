@@ -53,10 +53,3 @@ int **prodNumberMatrix(int **mat, int n, int len1, int len2) {
     }
     return res;
 }
-
-int **prodMatrix(int **mat1, int **mat2, int len1, int len2) {
-    int **res = (int **) malloc(sizeof(int) * (len1+1));
-    for (int k = 0; k < len1; k++) {
-        res[k] = malloc(sizeof(int) * (len2));
-    }
-}
